@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>com.loopj.android</groupId>
 			<artifactId>android-async-http</artifactId>
-			<version>1.4.4</version>
+			<version>1.4.5</version>
 		</dependency>
 	</dependencies>
 	<build>

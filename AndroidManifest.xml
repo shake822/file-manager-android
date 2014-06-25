@@ -4,6 +4,8 @@
     android:versionCode="1"
     android:versionName="0.0.1-SNAPSHOT" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
@@ -20,7 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
     </application>
 
 </manifest>
