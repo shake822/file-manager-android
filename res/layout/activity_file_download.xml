@@ -54,4 +54,59 @@
         android:layout_alignRight="@+id/pause_click"
         android:layout_below="@+id/download_click" />
 
+    <EditText
+        android:id="@+id/uploadFilePath"
+        android:hint="输入需要上传的文件路径"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:layout_alignRight="@+id/progressBar1"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="79dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/upload_submit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uploadFilePath"
+        android:layout_centerVertical="true"
+        android:onClick="uploadClick"
+        android:text="上传" />
+
+    <Button
+        android:id="@+id/upload_pause"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/upload_submit"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/upload_submit"
+         android:onClick="uploadPauseClick"
+        android:text="暂停" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_upload"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/uploadFilePath"
+        android:layout_below="@+id/upload_submit"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/linearLayout1" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar_upload"
+        android:layout_alignLeft="@+id/download_click"
+        android:layout_marginLeft="21dp"
+         android:onClick="uploadRangClick"
+        android:text="断点上传" />
+
 </RelativeLayout>
